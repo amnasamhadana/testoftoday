@@ -1,0 +1,22 @@
+<!DOCTYPE <html>
+<head>
+	  <link rel="stylesheet" type="text/css" href="../static/home.css">
+
+	<title>All books are here!!</title>
+</head>
+
+<body>
+	<a href="http://127.0.0.1:8004/addbooks" > Add a book </a> <br><br>
+	{% for i in list%}
+	Name of book : <p> {{i.bookname}}</p>
+
+	Author of the book: <p> {{i.authorname}}</p>
+	Copies of books: <p> {{i.bookscopies}}</p>
+	Type of the book: <p> {{i.typeofbook}}</p>
+
+
+	{%endfor%}
+	
+
+</body>
+</html>
